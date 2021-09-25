@@ -12,16 +12,3 @@ services:
         restart: always
         volumes:
             - './:/usr/share/nginx/html'
-
-    database:
-        image: 'postgres:12'
-        restart: always
-        volumes:
-            - ${DOCKER_PGSQL_DATA-pgsql-data}:/var/lib/postgresql/data
-        environment:
-            - PGDATA=/var/lib/postgresql/data/pgdata
-            - POSTGRES_DB=${DB_DATABASE}
-            - POSTGRES_USER=${DB_USERNAME}
-            - POSTGRES_PASSWORD=${DB_PASSWORD}
-volumes:
-    pgsql-data:
