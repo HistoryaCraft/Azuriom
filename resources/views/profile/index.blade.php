@@ -39,7 +39,7 @@
                             <li>{{ trans('messages.profile.info.2fa', ['2fa' => trans_bool($user->hasTwoFactorAuth())]) }}</li>
                         </ul>
 
-                        @if($user->hasTwoFactorAuth())
+                        {{--@if($user->hasTwoFactorAuth())
                             <form action="{{ route('profile.2fa.disable') }}" method="POST">
                                 @csrf
 
@@ -49,13 +49,13 @@
                             </form>
                         @else
                             <a class="btn btn-primary" href="{{ route('profile.2fa.index') }}">{{ trans('messages.profile.2fa.enable') }}</a>
-                        @endif
+                        @endif--}}
                     </div>
                 </div>
             </div>
         </div>
 
-        @if(! oauth_login())
+        {{--@if(! oauth_login())
             @if(! $user->hasVerifiedEmail())
                 @if (session('resent'))
                     <div class="alert alert-success mb-4" role="alert">
@@ -183,7 +183,7 @@
                     </div>
                 @endif
             </div>
-        @endif
+        @endif--}}
     </div>
 @endsection
 
