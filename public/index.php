@@ -31,6 +31,16 @@ if (file_exists(__DIR__.'/../storage/framework/maintenance.php')) {
 |
 */
 
+// Dirty fix to avoid "package sentry/sentry" is not installed
+if (file_exists(__DIR__ . '/../plugins/shop/vendor/autoload.php')) {
+    require __DIR__.'/../plugins/shop/vendor/autoload.php';
+}
+
+// Dirty fix to avoid "package sentry/sentry" is not installed
+if (file_exists(__DIR__ . '/../plugins/discord-auth/vendor/autoload.php')) {
+    require __DIR__.'/../plugins/discord-auth/vendor/autoload.php';
+}
+
 require __DIR__.'/../vendor/autoload.php';
 
 /*
