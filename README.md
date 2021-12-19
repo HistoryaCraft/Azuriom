@@ -10,6 +10,11 @@
 * `php artisan migrate --seed`
 * `php artisan user:create --admin`
 
+# Fork features
+* User can edit their own username
+* Sentry.io integration
+* Docker improvement 
+
 # Azuriom
 
 [![PHP CI](https://img.shields.io/github/workflow/status/Azuriom/Azuriom/PHP%20CI?style=flat-square)](https://github.com/Azuriom/Azuriom/actions)
