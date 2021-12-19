@@ -1,5 +1,15 @@
 <p align="center"><img src="https://azuriom.com/assets/svg/logo-text.svg" width="400" alt="Azuriom"></p>
 
+# Installation
+
+* `composer install`
+* `npm-install`
+* `npm-run-prod`
+* `php artisan storage:link`
+* `php artisan key:generate`
+* `php artisan migrate --seed`
+* `php artisan user:create --admin`
+
 # Azuriom
 
 [![PHP CI](https://img.shields.io/github/workflow/status/Azuriom/Azuriom/PHP%20CI?style=flat-square)](https://github.com/Azuriom/Azuriom/actions)
