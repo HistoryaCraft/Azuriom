@@ -15,6 +15,16 @@ define('LARAVEL_START', microtime(true));
 |
 */
 
+// Dirty fix to avoid "package sentry/sentry" is not installed
+if (file_exists(__DIR__ . '/plugins/shop/vendor/autoload.php')) {
+    require __DIR__.'/plugins/shop/vendor/autoload.php';
+}
+
+// Dirty fix to avoid "package sentry/sentry" is not installed
+if (file_exists(__DIR__ . '/plugins/discord-auth/vendor/autoload.php')) {
+    require __DIR__.'/plugins/discord-auth/vendor/autoload.php';
+}
+
 require __DIR__.'/vendor/autoload.php';
 
 $app = require_once __DIR__.'/bootstrap/app.php';
